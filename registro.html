@@ -1,0 +1,105 @@
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Virtual Barber</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <div class="clearfix"></div>
+</head>
+
+<body>
+    <!-- CABECERA -->
+    <header id="cabecera">
+        <!-- LOGO -->
+        <div id="logo">
+            <img src="images/1f488.png" alt="Barberia Logo" />
+            <a href="index.html">
+                Virtual Barber
+            </a>
+        </div>
+
+        <!-- MENU -->
+        <nav class="navegacion">
+            <ul class="menu">
+                <li><div id="logo-menu">
+                    <img src="images/MENU.png" alt="Menu Logo" />
+                </div>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="login.html">Inicio de sesión</a>
+                        </li>
+                        <li>
+                            <a href="registro.html">Registro</a>
+                        </li>
+                        <li>
+                            <a href="quienesSomos.html">Quienes somos</a>
+                        </li>
+                        
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="clearfix"></div>
+    </header>
+
+    <div id="contenedor">
+
+        <!--contenido principal-->
+        <div id="principal-datos">
+            <h1>Registro</h1>
+
+            <article class="entrada">
+                <div id="login" class="bloque">
+
+
+
+                    <form action="login.php" method="POST">
+
+                        <label for="nombre">Nombre y apellido</label>
+                        <input type="text" name="nombre" />
+
+                        <label for="nombre">Correo electronico</label>
+                        <input type="text" name="nombre" />
+
+                        <label for="nombre">Ciudad</label>
+                        <input type="text" name="nombre" />
+
+                        <label for="nombre">Direccion</label>
+                        <input type="text" name="nombre" />
+
+                        <label for="nombre">Celular</label>
+                        <input type="text" name="nombre" />
+
+                        <label for="email">Login</label>
+                        <input type="email" name="email" />
+
+                        <label for="password">Contraseña</label>
+                        <input type="password" name="password" />
+
+                        <input type="submit" value="Guardar" />
+
+                    </form>
+                </div>
+            </article>
+
+        </div>
+
+        <!--fin del contenedor-->
+
+        <!--pie de pagina-->
+        <div class="clearfix"></div>
+    </div>
+    <footer id="pie">
+        <p>
+            Desarrllado por Jaime Andres Serna y Andres Felipe Garcia &copy; 2020
+        </p>
+    </footer>
+
+</body>
+
+
+</html>
