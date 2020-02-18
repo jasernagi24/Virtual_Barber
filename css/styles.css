@@ -17,6 +17,14 @@ Fuentes
     text-decoration: none;
 }
 
+input:invalid{
+    border: 2px solid red;
+}
+input:valid{
+    border: 2px #007ee5 solid;
+}
+
+
 .clearfix{
     clear: both;
     float: none;
