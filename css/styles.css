@@ -17,13 +17,6 @@ Fuentes
     text-decoration: none;
 }
 
-input:invalid{
-    border: 2px solid red;
-}
-input:valid{
-    border: 2px #007ee5 solid;
-}
-
 
 .clearfix{
     clear: both;
@@ -106,16 +99,33 @@ height: 100px;
      margin: 0px auto;
 
 }
+
 .menu {
-    width: 100%;
+    float: left;
+    width: 40%;
      margin: 0px auto;
+     margin-left: 4%;
 }
+
+.registro-login {
+    float: right;
+    width: auto;
+    height: 45px;
+    background: linear-gradient(to bottom, rgba(43, 49, 255, 0.75) 0px, #ff0f0fc7 100%);
+    border: 2px solid #C9C9C9;
+    border-radius: 8px;
+    box-shadow: 0px 1px 1px #ccc;
+    overflow: hidden;
+    margin-right: 5%;
+}
+
 .navegacion ul{
     list-style: none;
 }
 
 
-.menu > li{
+
+.menu li{
     position: relative;
     background: #ffffffa6;
     clear: both;
@@ -125,12 +135,32 @@ height: 100px;
     border-radius: 8px;
     box-shadow: 0px 1px 1px #ccc;
 }
-.menu > li > a {
+.menu li a {
     display: block;
     padding: 15px 20px;
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
+}
+
+.registro-login li{
+    float: left;
+    line-height: 44px;
+    border-right: 1px solid #D6D6D6;
+}
+
+
+.registro-login li a {
+    text-align: center;
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.registro-login ul li a:hover{
+    background: linear-gradient(to bottom, #f2f2f2 0px, #dad9d4 100%);
 }
 
 .sub-menu{
@@ -388,6 +418,10 @@ input[type="submit"],
     box-shadow: 2px 2px 0px #838282;
     margin-top: 20px;
     margin-bottom: 15px;
+}
+
+.bloque h5{
+    color: red;
 }
 
 /*PIE DE PAGINA*/
