@@ -51,7 +51,7 @@ function validarDireccionForm() {
 // validar el campo del celular en el formulario
 function validarCelularForm() {
     celularForm = document.getElementById("validar-celularForm").value;
-    if (celularForm.length < 9 || isNaN(celularForm || celularForm == null)) {
+    if (celularForm.length < 9 || isNaN(celularForm) || celularForm == null) {
         document.getElementById('error-celularForm').innerHTML = '<h5>Debe tener 10 digitos y solo numeros</h5>';
     }
     else {

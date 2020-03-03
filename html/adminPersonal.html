@@ -17,63 +17,74 @@
             </a>
         </div>
 
-        <!-- MENU -->
-        <header id="cabecera">
-            <!-- LOGO -->
-            <div id="logo">
-                <img src="../images/1f488.png" alt="Barberia Logo" />
-                <a href="index.html">
-                    Virtual Barber
-                </a>
+                    <!-- MENU -->
+        <nav class="navbar navegacion" >
+            <div class="conteiner">
+            <ul class="menu">
+                <li><div id="logo-menu">
+                    <img src="../images/MENU.png" alt="Menu Logo" />
+                </div>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="quienesSomos.html">Quienes somos</a>
+                        </li>
+                        <li>
+                            <a href="adminPersonal.html">Administrar citas</a>
+                        </li>
+                        <li>
+                            <a href="cliente.html">Cliente</a>
+                        </li>
+                        
+                    </ul>
+                </li>
+            </ul>
+            <ul class="registro-login">
+                <li>
+                    <a href="login.html">Inicio de sesión</a>
+                </li>
+                <li>
+                    <a href="registro.html">Registro</a>
+                </li>
+            </ul>
             </div>
-    
-            <!-- MENU -->
-            <nav class="navegacion">
-                <ul class="menu">
-                    <li><div id="logo-menu">
-                        <img src="../images/MENU.png" alt="Menu Logo" />
-                    </div>
-                        <ul class="sub-menu">
-                            <li>
-                                <a href="index.html">Inicio</a>
-                            </li>
-                            <li>
-                                <a href="quienesSomos.html">Quienes somos</a>
-                            </li>
-                            
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="registro-login">
-                    <li>
-                        <a href="login.html">Inicio de sesión</a>
-                    </li>
-                    <li>
-                        <a href="registro.html">Registro</a>
-                    </li>
-                </ul>
-            </nav>
+        </nav>
     
         </header>
 
     <div id="contenedor">
-
-
-
-
         <!--contenido principal-->
         <div id="principal">
-            <h1>Estilos de cabello</h1>
+            <h1>Administrar citas</h1>
 
             <article class="entrada">
-                <a href="">
-                    <h2></h2>
+                <div id='lista-citas' class="bloque">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nombre cliente</th><th>Celular</th><th>Fecha</th><th>Hora</th><th>Estado cita</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>Jaime Serna</td><td>3177445608</td><td>04/03/2020</td><td>16:30</td><td>pendiente</td>
+                        </tr>
+                        <tr>
+                            <td>Felipe Garcia</td><td>3137084967</td><td>13/03/2020</td><td>09:30</td><td>pendiente</td>
+                        </tr>
+                        <tr>
+                            <td>Julian Castaño</td><td>3008018503</td><td>05/03/2020</td><td>11:00</td><td>pendiente</td>
+                        </tr>
+                        <tr>
+                            <td>Daniel Perez</td><td>3208546509</td><td>25/02/2020</td><td>16:30</td><td>Realizado</td>
+                        </tr>
 
-
-                    <p>
-
-                    </p>
-                </a>
+                    </table>
+                </div>
+                <div id="boton-administrarCitas">
+                <input class="boton-actualizar" type="button" value="Actualizar"> <input class="boton-eliminar" type="button" value="Eliminar">
+            </div>
             </article>
 
 

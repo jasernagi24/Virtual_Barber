@@ -18,7 +18,8 @@
         </div>
 
         <!-- MENU -->
-        <nav class="navegacion">
+        <nav class="navbar navegacion" >
+            <div class="conteiner">
             <ul class="menu">
                 <li><div id="logo-menu">
                     <img src="../images/MENU.png" alt="Menu Logo" />
@@ -29,6 +30,12 @@
                         </li>
                         <li>
                             <a href="quienesSomos.html">Quienes somos</a>
+                        </li>
+                        <li>
+                            <a href="adminPersonal.html">Administrar citas</a>
+                        </li>
+                        <li>
+                            <a href="cliente.html">Cliente</a>
                         </li>
                         
                     </ul>
@@ -42,6 +49,7 @@
                     <a href="registro.html">Registro</a>
                 </li>
             </ul>
+            </div>
         </nav>
 
     </header>
@@ -57,7 +65,7 @@
 
 
 
-                    <form action="login.php" method="POST">
+                    <form  name="registro" action="#" method="POST">
 
                         <label for="email">Login</label>
                         <input type="email" name="email" placeholder="Digite su email"/>
