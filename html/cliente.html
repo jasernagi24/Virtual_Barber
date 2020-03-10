@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virtual Barber</title>
     <link rel="stylesheet" type="text/css" href="../css/styles.css" />
-    <link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css" />
+
 
 </head>
 
@@ -20,89 +20,93 @@
             </a>
         </div>
 
-                    <!-- MENU -->
-        <nav class="navbar navegacion" >
+        <!-- MENU -->
+        <nav class="navbar navegacion">
             <div class="conteiner">
-            <ul class="menu">
-                <li><div id="logo-menu">
-                    <img src="../images/MENU.png" alt="Menu Logo" />
-                </div>
-                    <ul class="sub-menu">
-                        <li>
-                            <a href="index.html">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="quienesSomos.html">Quienes somos</a>
-                        </li>
-                        <li>
-                            <a href="adminPersonal.html">Administrar citas</a>
-                        </li>
-                        <li>
-                            <a href="cliente.html">Cliente</a>
-                        </li>
-                        
-                    </ul>
-                </li>
-            </ul>
-            <ul class="registro-login">
-                <li>
-                    <a href="login.html">Inicio de sesión</a>
-                </li>
-                <li>
-                    <a href="registro.html">Registro</a>
-                </li>
-            </ul>
+                <ul class="menu">
+                    <li>
+                        <div id="logo-menu">
+                            <img src="../images/MENU.png" alt="Menu Logo" />
+                        </div>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="index.html">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="quienesSomos.html">Quienes somos</a>
+                            </li>
+                            <li>
+                                <a href="adminPersonal.html">Administrar citas</a>
+                            </li>
+                            <li>
+                                <a href="cliente.html">Cliente</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="registro-login">
+                    <li>
+                        <a href="login.html">Inicio de sesión</a>
+                    </li>
+                    <li>
+                        <a href="registro.html">Registro</a>
+                    </li>
+                </ul>
             </div>
         </nav>
-    
-        </header>
 
-        <div id="contenedor">
+    </header>
 
-            <!--contenido principal-->
-            <div id="principal">
-                <h1>Registro</h1>
-    
-                <article class="entrada">
-                    <div id="registro" class="bloque">
-    
-                        <form id="formulario" name="registro" action="#" method="POST" >
-    
-                            <label for="nombre">Nombres</label>
-                            <input type="text" id="validar-nombreForm" placeholder="Digite su nombre completo" onkeypress="validarNombreForm()" />
-                            <div id="error-nombreForm"></div>
-    
-                            <label for="apellido">Apellido</label>
-                            <input type="text" id="validar-apellidoForm" placeholder="Digite su apellido" onkeypress="validarForm()" />
+    <div id="contenedor">
+
+        <!--contenido principal-->
+        <div id="principal-datos">
+            <h1>Agendar cita</h1>
+
+            <article class="entrada">
+                <div id="registro-citas" class="bloque">
+
+                    <form id="formulario" name="registro" action="#" method="POST">
+                        <div id="formulario-citas">
+                            <label for="barbero">Barbero</label>
+                            <select name="barberos" id="barberos">
+                                <option value="default"></option>
+                                <option value="niche">El niche</option>
+                                <option value="cali">Cali</option>
+                                <option value="coste">El coste</option>
+                                <option value="veneco">El Veneco</option>
+                                <option value="paisa">El paisa</option>
+                                <option value="laiza">La laiza</option>
+                            </select>
+
+
+                            <label for="estilo">Corte</label>
+                            <select name="cortes" id="cortes">
+                                <option value="default"></option>
+                                <option value="militar">Militar</option>
+                                <option value="desvanecido">Desvanecido</option>
+                                <option value="siete">El siete</option>
+                                <option value="ocho">El ocho</option>
+                                <option value="calvo">Calvo</option>
+                                <option value="cresta">La cresta</option>
+                            </select>
+
+                            <label for="fecha">Fecha de cita</label>
+                            <input type="date" name="fecha-cita">
+
+                            <label for="estilo">Hora de cita</label>
+                            <input type="time" id="validar-citas" />
                             <div id="error-apellidoForm"></div>
-    
-                            <label for="email">Correo electronico</label>
-                            <input type="email" id="validar-emailForm" placeholder="Digite su email" onkeypress="validarEmailForm()"  />
-                            <div id="error-emailForm"></div>
-    
-                            <label for="ciudad">Ciudad</label>
-                            <input type="text" id="validar-ciudadForm" placeholder="Digite ciudad de residencia" onkeypress="validarForm()" />
-                            <div id="error-ciudadForm"></div>
-    
-                            <label for="direccion">Direccion</label>
-                            <input type="text" id="validar-direccionForm" placeholder="Digite direccion de residencia" onkeypress="validarForm()" />
-                            <div id="error-direccionForm"></div>
-    
-                            <label for="celular">Celular</label>
-                            <input type="text" id="validar-celularForm"  placeholder="Digite su celular" onkeypress="validarCelularForm()" />
-                            <div id="error-celularForm"></div>
-    
-                            <label for="password">Contraseña</label>
-                            <input type="password" id="validar-passwordForm" placeholder="Digite una contraseña de inicio de sesión"  onkeypress="validarForm()" />
-                            <div id="error-passwordForm"></div>
-    
-                            <input type="submit" value="Guardar" />
-    
-                        </form>
-                    </div>
-                </article>
-    
-            </div>
+                        </div>
+                    </form>
+
+
+                    <input type="submit" value="Solicitar cita" />
+                </div>
+
+            </article>
+        </div>
 
         <!--fin del contenedor-->
 
